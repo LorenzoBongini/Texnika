@@ -1,0 +1,39 @@
+<!-- Source for the home web-page -->
+
+<!DOCTYPE html> <!-- Sets page DOCTYPE to html -->
+<html lang="en"> <!-- Sets page default language to english -->
+
+    <head> <!-- Container for metadata -->
+
+        <title>Техніка</title> <!-- Sets page title -->
+        <link rel="stylesheet" href="Техніка.css"> <!-- Fetches CSS stylesheet for web-page -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Fetches icon images from public source -->
+        
+    </head>
+
+    <body> <!-- Container for document's body -->
+
+        <script src = "Техніка.js"></script> <!-- Fetches Java Script code from local source -->
+
+        <div class="icon-bar"> <!-- Declares icon-bar object with Home & Blog icons -->
+            <a class="active" href="Техніка.html"><i class="fa fa-home"></i> Home</a>
+            <a href="ТехнікаBlog.html"><i class="fa fa-feed"></i> Blog</a>
+        </div>
+
+        <div> <!-- Declares main web-page content such as, blog TITLE -->
+            <h1 title="Слава Україні!">Техніка</h1> <!-- Hover over title for secret "message" -->
+            
+            <button type ="button" onclick="document.getElementById('demo').innerHTML = Date()"> Date and Time </button> <!-- Implements basic Java Script to show date and time on button click -->
+            <p id="demo"></p>
+
+            <ol> <!-- Creates a list of things to do for the website -->
+                <li>Find a purpose for this website</li>
+                <li>Implement Java Script in this website</li>
+                <li>Upload the website to a server and connect it to the internet</li>
+            </ol>
+
+        </div>
+
+    </body>
+
+</html>
