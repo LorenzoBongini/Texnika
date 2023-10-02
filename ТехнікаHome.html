@@ -6,7 +6,7 @@
     <head> <!-- Container for metadata -->
 
         <title>Техніка</title> <!-- Sets page title -->
-        <link rel="stylesheet" href="Техніка.css"> <!-- Fetches CSS stylesheet for web-page -->
+        <link rel="stylesheet" href="ТехнікаStyleSheet.css"> <!-- Fetches CSS stylesheet for web-page -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Fetches icon images from public source -->
         
     </head>
@@ -33,16 +33,21 @@
 
         </div>
         
-        <div>        
-            <ul> <!-- Creates a list of things to do for the website -->
-                <li>Find a purpose for this website</li>
-                <li>Maybe more than a website, build a web app?</li>
-                <li>Implement Java Script in this website</li>
-                <li>Upload the website to a server and connect it to the internet</li>
-                <li>^ can't be done unless a domain name is bought</li>
+        <div>
+
+            <script src = "Техніка.js"></script> <!-- Fetches Java Script code from local source -->
+            <div id="myDIV" class="header">
+                <script src = "Техніка.js"></script> <!-- Fetches Java Script code from local source -->
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUl">
+                <script src = "Техніка.js"></script> <!-- Fetches Java Script code from local source -->
             </ul>
         </div>
-        
+
         <!-- Adding more images of the "loners" logo from stalker to make the page look even creepier-->
         <div class="container">
             <img src="images/loners.webp" alt="LONER">
