@@ -23,9 +23,18 @@ p {
     color: white;
 }
 
-/* Sets img size (does nothing) */
+.container {
+    text-align: center; /* Center horizontally */
+    display: flex; /* Sets container as flexible */
+    justify-content: center; /* Center horizontally (alternative) */
+    align-items: center; /* Center vertically (alternative) */
+    height: 100vh; /* Optional: Set a height for vertical centering */
+}
+
+/* Sets img size */
 img {
-     size-adjust: 10px;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Removes any default inline alignment */
 }
 
 /* Sets ol color */
@@ -36,4 +45,8 @@ ol {
 /* Sets li color */
 li {
     color: white;
+}
+
+button {
+    text-align: center;
 }
