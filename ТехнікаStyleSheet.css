@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #0c0c0c;
+    font-size: 18px;
+    transition: 0.2s;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: rgb(180, 180, 50);
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li:checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #d9ff00;
+    color: white;
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    padding: 30px 40px;
+    color: rgb(189, 189, 17);
+    text-align: center;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
+
+/* Sets page background color */
+body {
+    background-color: black;
+}
+
+/* Sets h1 text color, aligns text to center and positions it */
+h1 {
+    
+    color: yellow;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+/* Sets h2 text color */
+h2 {
+
+    color: rgb(238, 255, 0);
+}
+
+/* Sets p text color */
+p {
+    color: white;
+}
+
+.container {
+    text-align: center; /* Center horizontally */
+    display: flex; /* Sets container as flexible */
+    justify-content: center; /* Center horizontally (alternative) */
+    align-items: center; /* Center vertically (alternative) */
+    height: 100vh; /* Optional: Set a height for vertical centering */
+}
+
+/* Sets img size */
+img {
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Removes any default inline alignment */
+}
+
+/* Sets ol color */
+ol {
+    color: white;
+}
+
+/* Sets li color */
+li {
+    color: white;
+}
+
+ /* Because we created <div class> we can now modify elements in container separately */
+.image-container p {
+    
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10%;
+
+}
+
+/* Modifies size of img in image-container class */
+.image-container img {
+    
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+/* Modifies the positioning of the button */
+.center-button {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+
+}
+
